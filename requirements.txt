@@ -1,1 +1,7 @@
-binodtharu
+imageio
+numpy
+matplotlib
+ipython
+scikit-image
+warnings
+scipy
