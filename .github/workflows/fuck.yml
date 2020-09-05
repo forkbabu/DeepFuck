@@ -16,4 +16,8 @@ jobs:
         run: |
           pip3 install -r requirements.txt
           sh git-setup.sh
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: first-order-model/generated.mp4
           
