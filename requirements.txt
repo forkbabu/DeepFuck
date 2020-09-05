@@ -1,4 +1,5 @@
 ipython
+tkinter
 imageio_ffmpeg
 cffi==1.11.5
 cloudpickle==0.5.3
