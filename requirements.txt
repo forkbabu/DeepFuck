@@ -5,3 +5,4 @@ ipython
 scikit-image
 scipy
 imageio_ffmpeg
+yaml
