@@ -14,7 +14,6 @@ jobs:
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          sh git-setup.sh
           pip3 install -r requirements.txt
-          python3 first.py
-          sh second.sh
+          sh git-setup.sh
+          
