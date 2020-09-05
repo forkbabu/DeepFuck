@@ -1,0 +1,20 @@
+name: train-my-deepfake
+
+on: [push]
+
+jobs:
+  run:
+    runs-on: [ubuntu-latest]
+    container: docker://dvcorg/cml-py3:latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: cml_run
+        env:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sh git-setup.sh
+          pip3 install -r requirements.txt
+          python3 first.py
+          sh second.sh
