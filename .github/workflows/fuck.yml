@@ -19,5 +19,5 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
-          path: output.mp4
+          path: first-order-model/output.mp4
           
